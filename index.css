@@ -53,3 +53,36 @@ button {
 button:hover {
   background-color: #0056b3;
 }
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+#recipes-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.recipe-card {
+  border: 1px solid #ccc;
+  padding: 1rem;
+}
+
+.recipe-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 1rem;
+  color: #666;
+  padding: 1rem;
+}
+
+.no-results {
+  grid-column: 1 / -1;
+  font-size: 1.5rem;
+  padding: 2rem;
+}
