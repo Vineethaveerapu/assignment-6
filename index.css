@@ -10,7 +10,7 @@ body {
   font-family: Arial, sans-serif;
   background-color: #f0f0f0;
   margin: 0;
-  padding: 0;
+  padding: 1rem;
   text-align: center;
 }
 
@@ -33,7 +33,6 @@ p {
 }
 
 input {
-  width: 20rem;
   padding: 0.5rem;
   border: 1px solid #ccc;
   border-radius: 0.25rem;
@@ -85,4 +84,19 @@ img {
   grid-column: 1 / -1;
   font-size: 1.5rem;
   padding: 2rem;
+}
+
+@media (max-width: 768px) {
+  #recipes-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .search-container {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  #recipes-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
