@@ -1,9 +1,16 @@
 const API_URL = "https://dummyjson.com/recipes";
 
 async function fetchData(path) {
+  try {
   const response = await fetch(`${API_URL}/${path}`);
   const data = await response.json();
   return data;
+  } catch (error) {
+    console.error("Error fetching data:", error);
+    const errorMessage = document.getElementById("error-message");
+    errorMessage.textContent = "Error fetching data";
+    return null;
+  }
 }
 
 async function searchRecipes(searchTerm) {
