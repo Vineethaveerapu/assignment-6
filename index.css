@@ -18,6 +18,7 @@ h1 {
   font-size: 4rem;
   margin-bottom: 1rem;
   animation: fadeInDown 1.2s ease-out;
+  color: #f02a37;
 }
 
 @keyframes fadeInDown {
